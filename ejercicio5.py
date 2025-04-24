@@ -21,8 +21,12 @@ elif tit=="n" or tit=="N":
         print("\nEres No eres empleable")
     else: print("\nIngrese una opcion valida")
 else: print("\nIngrese una opcion valida")
-
-num=float(input("\nIngresa un numero: "))
+while True:
+    try:
+        num=float(input("\nIngresa un numero: "))
+        break
+    except ValueError:
+        print("\nIngrese un numero valido")
 
 if 10<=num<=50:
     print(f"\n{num} esta entre 10 y 50")

@@ -18,8 +18,12 @@ print("\n", cads)
 print("")
 
 entr=input("\nIngresa un numero: ")
-
-entr = float(entr)
+while True:
+    try:
+        entr = float(entr)
+        break
+    except ValueError:
+        print("\nIngrese un numero valido")
 mult= entr*2
 print(f"\nEl doble de tu numero es {mult}")
 
