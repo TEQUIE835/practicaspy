@@ -1,25 +1,20 @@
-while True:
-    try:
-        bas=float(input("Ingrese la base: "))
-        break
-    except ValueError:
-        print("\nIngrese un numero valido")
-while True:
-    try:
-        alt=float(input("\nIngrese la altura: "))
-        break
-    except:
-        print("\nIngrese un numero valido")
+def tryfloat():
+    while True:
+        try:
+            a=float(input("Ingrese la base: "))
+            return a
+            
+        except ValueError:
+            print("\nIngrese un numero valido")
+
+
+bas=tryfloat()
+alt=tryfloat()
 
 are=bas*alt
 
 print(f"\nEl area de tu cuadrilatero es {are}")
-while True:
-    try:
-        pre=float(input(" \nIngrese un precio: "))
-        break
-    except:
-       print ("\nIngrese un precio valido")
+pre=tryfloat()
 while True:
     try:
         des=int(input("\nINgrese un descuento: "))
@@ -31,47 +26,17 @@ while True:
 prd= pre-((pre*des)/100)
 print(f"\nTu precio con descuento es {prd}")
 
-while True:
-    try:
-        num1=float(input("\nIngrese primer numero: "))
-        break
-    except ValueError:
-        print("\nIngrese un numero valido")
-while True:
-    try:
-        num2=float(input("\nIngrese segundo numero: "))
-        break
-    except ValueError:
-        print("\nIngrese un numero valido")
+num1=tryfloat()
+num2=tryfloat()
       
         
 res= num1 % num2
 print(f"\nEl residuo de su division es {res}")
 
-while True:
-    try:
-        sum=float(input("\nIngrese un numero: "))
-        break
-    except ValueError:
-        print("\nIngrese un numero valido")
-while True:
-    try:
-        res=float(input("\nIngrese otro numero: " ))
-        break
-    except ValueError:
-        print("\nIngrese un numero valido")
-while True:
-    try:
-        mult=float(input("\nIngrese otro numero: "))
-        break
-    except ValueError:
-        print("\nIngrese un numero valido")
-while True:
-    try:
-        div=float(input("\nIngrese otro numero: "))
-        break
-    except ValueError:
-        print("\nIngrese un numero valido")
+sum=tryfloat()
+res=tryfloat()
+mult=tryfloat()
+div=tryfloat
         
         
         
